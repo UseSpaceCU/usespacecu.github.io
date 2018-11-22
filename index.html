@@ -48,16 +48,18 @@
                         <a class="nav-link" href="index.html">
                             <b>Home</b><span class="sr-only">(current)</span></a>
                     </li>
-
+                    <!--
                     <li class="nav-item">
                         <a class="nav-link" href="locations.html">
                             <b>Locations</b>
                         </a>
                     </li>
+                    
+                    -->
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <b>Blog</b>
+                        <a class="nav-link" href="https://usespacecu.wordpress.com" target="_blank">
+                            <b>Our Blog</b>
                         </a>
                     </li>
 
@@ -68,8 +70,8 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="">
-                            <button class="btn btn-sm btn-outline-success" type="button">Make Payment</button>
+                        <a class="nav-link" href="#">
+                            <button class="btn btn-sm btn-outline-success" type="button" data-toggle="modal" data-target="#paymentModal">Make Payment</button>
                         </a>
                     </li>
 
@@ -81,6 +83,36 @@
     </nav>
 
 
+    <!-------Payment Modal----->
+    <div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLongTitle">Already Booked?</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><br /><strong>
+                        We're already processing your booking and will contact you soon.<br />
+                        Leave the stress to us.<br /><br /></strong>
+                        If not, book with us today!<br />
+                    </p>
+                </div>
+                <div class="modal-footer">               
+                      <a href="https://goo.gl/forms/24GdvOzbv3IsKvXE2" target="_blank">
+                            <button class="btn btn-outline-info btn-sm" type="button">Book Now</button>
+                        </a>
+                    
+                    <!--<button type="button" class="btn btn-info" href="https://goo.gl/forms/24GdvOzbv3IsKvXE2">Book Now</button> -->
+                    <button type="button" class="btn btn-secondary btn-sm"  data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!---------------Carousel-------------->
     <div id="homeCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -90,14 +122,18 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="images/carousel/1.png" alt="First slide">
+                <a href="https://goo.gl/forms/24GdvOzbv3IsKvXE2" target="_blank">
+                    <img class="d-block w-100" src="images/carousel/usespace-main-banner.jpg" alt="First slide">
+                </a>
             </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="images/carousel/2.png" alt="Second slide">
+            <div class="carousel-item"><a href="https://goo.gl/forms/24GdvOzbv3IsKvXE2" target="_blank">
+                    <img class="d-block w-100" src="images/carousel/office-space-banner.jpg" alt="Second slide">
+                </a>
             </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="images/carousel/3.png" alt="Third slide">
-            </div>
+
+            <div class="carousel-item"><a href="https://goo.gl/forms/24GdvOzbv3IsKvXE2" target="_blank">
+                    <img class="d-block w-100" src="images/carousel/multipurposehall-banner.jpg" alt="Third slide">
+                </a> </div>
         </div>
 
         <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
@@ -116,60 +152,78 @@
 
     <!---------Main Content---------->
 
-    <div class="container" id="welcome">
+    <div class="container" id="welcome"><br /><br />
         <h1 class="text-center"><strong>Welcome to UseSpace<br /></strong></h1>
         <h5 class="text-center">
-            <text-muted>the best place to book a space or event center for your amazing showy event or work.</text-muted><br /><br /><br />
+            <text-muted>the best place to book a space or event center for your amazing showy event or work.</text-muted><br /><br />
         </h5>
+        <br /><br />
     </div>
-    <hr /><br />
 
 
-    <div id="for rent">
+    <div class="bg-light" id="for rent">
+        <hr /><br />
         <div class="container">
             <div class="row" id="multipurpose hall">
-                <div class="col">
-                    <h4><strong>Multipurpose Halls</strong></h4>
-                    <p>For your conferences, meet ups, events and celebrations...</p>
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <img class="img-fluid rounded" src="images/home/multipurpose-hall.jpg">
                 </div>
-                <div class="col">
+                <div class=""></div>
+                <div class="col-6"><br />
+                    <h2><br /><strong>Multipurpose Halls</strong></h2>
+                    <p><br /><br />For your conferences, meet ups, events and celebrations...<br />We pride ourselves with a portfolio of locations that can fit any crowd <br />from a few hundred to a couple thousand.</p>
                 </div>
             </div>
         </div>
 
+        <br /><br /><br />
         <!--
         <hr /><br />
 -->
 
+
+        <div class="container">
+            <div class="row text-right" id="office spaces">
+                <div class="col-6"><br />
+                    <h2><br /><strong>Office Spaces</strong></h2>
+                    <p><br /><br />We have office spaces able to host teams of different sizes.<br />
+                        Use us today to increase your team's productivity <br />with spacious and affordable work spaces!</p>
+                </div>
+                <div class="col-4">
+                    <img class="img-fluid rounded" src="images/home/office-space.jpg">
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+
+
+        <!--
+        <hr /><br />
+-->
+        <br /><br /><br />
         <div class="container">
             <div class="row" id="conference rooms">
-                <div class="col">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <img class="img-fluid rounded" src="images/home/conference-room.jpg">
                 </div>
-                <div class="col">
-                    <h4><strong>Conference Rooms</strong></h4>
-                    <p>Suited for your management meetings and corporate gatherings...</p>
-                </div>
-            </div>
-        </div>
-
-        <!--
-        <hr /><br />
--->
-
-        <div class="container">
-            <div class="row" id="office spaces">
-                <div class="col">
-                    <h4><strong>Office Spaces</strong></h4>
-                    <p>Increase your team's productivity with spacious and affordable work spaces!</p>
-                </div>
-                <div class="col">
+                <div class="col-6">
+                    <br />
+                    <h2><br /><strong>Conference Rooms</strong></h2>
+                    <p><br /><br />Great companies and brands were all built on a series of great decisions.<br />Allow us to fix a venue for your management meetings and corporate gatherings...</p>
                 </div>
             </div>
         </div>
 
-        <!--
+        <br />
+        <hr />
+    </div>
+
+
+    <!--
         <hr /><br />
--->
+
 
         <div class="container">
             <div class="row" id="accomodation">
@@ -182,74 +236,76 @@
                 </div>
             </div>
         </div>
+-->
 
-        <hr /><br />
 
 
-        <!----------We Are---------->
-        <div class="container" id="about us">
 
-            <div>
-                <h3 class="text-center"><strong>Easy as A B C</strong></h3>
-                <br /><br />
-                <div class="row">
-                    <div class="col">
-                        <div class="text-center">
-                            <img src="images/home/easy.png" class="img-fluid">
-                            <h5><br /><strong>Easy</strong></h5>
-                        </div>
-                        <p class="text-muted text-center container">Select your venue</p>
+    <!----------We Are---------->
+    <div class="container" id="about us">
+
+        <div>
+            <br />
+            <h3 class="text-center"><strong>Easy as A B C</strong></h3>
+            <br /><br />
+            <div class="row">
+                <div class="col">
+                    <div class="text-center">
+                        <img src="images/home/easy.png" class="img-fluid">
+                        <h5><br /><strong>Easy</strong></h5>
                     </div>
-                    <div class="col">
-                        <div class="text-center">
-                            <img src="images/home/fast.png" class="img-fluid">
-                            <h5><br /><strong>Fast</strong></h5>
-                        </div>
-                        <p class="text-muted text-center container">Confirm your booking</p>
+                    <p class="text-muted text-center container"><strong>Select your venue <br />with just a few clicks</strong></p>
+                </div>
+                <div class="col">
+                    <div class="text-center">
+                        <img src="images/home/fast.png" class="img-fluid">
+                        <h5><br /><strong>Fast</strong></h5>
                     </div>
-                    <div class="col">
-                        <div class="text-center">
-                            <img src="images/home/reliable.png" class="img-fluid">
-                            <h5><br /><strong>Reliable</strong></h5>
-                        </div>
-                        <p class="text-muted text-center container">Make a payment and enjoy</p>
+                    <p class="text-muted text-center container"><strong>Confirm your booking <br />with a call</strong></p>
+                </div>
+                <div class="col">
+                    <div class="text-center">
+                        <img src="images/home/reliable.png" class="img-fluid">
+                        <h5><br /><strong>Reliable</strong></h5>
                     </div>
+                    <p class="text-muted text-center container"><strong>Make your payment <br />and leave the rest to us</strong></p>
                 </div>
             </div>
         </div>
+    </div>
 
+    <br />
+    <hr /><br />
+
+
+
+    <!------------What Clients Are Saying------------>
+    <div class="container" id="customer testimonials">
+        <h3 class="text-center"><strong>What Clients Are Saying</strong></h3>
         <br />
-        <hr /><br />
+        <div class="row">
 
+            <div class="col-2 text-center">
+                <img class="img-fluid rounded-circle" src="images/testimonials/esther.jpg" alt="client image">
+            </div>
+            <div class="col-4">
+                <blockquote class="blockquote">
+                    <p class="mb-0">Usespace provided me with a place for my Book launch event </p>
+                    <footer class="blockquote-footer">Esther <cite title="Source Title"> </cite></footer>
+                </blockquote>
+            </div>
 
-
-        <!------------What Clients Are Saying------------>
-        <div class="container" id="customer testimonials">
-            <h3 class="text-center"><strong>What Clients Are Saying</strong></h3>
             <br />
-            <div class="row">
 
-                <div class="col-2 text-center">
-                    <img class="img-fluid rounded-circle" src="images/testimonials/esther.jpg" alt="client image">
-                </div>
-                <div class="col-4">
-                    <blockquote class="blockquote">
-                        <p class="mb-0">Usespace provided me with a place for my Book launch event </p>
-                        <footer class="blockquote-footer">Esther <cite title="Source Title"> </cite></footer>
-                    </blockquote>
-                </div>
-
-                <br />
-
-                <div class="col-2 text-center">
-                    <img class="img-fluid rounded-circle" src="images/testimonials/rihana.jpg" alt="client image" height="1S0px">
-                </div>
-                <div class="col-4">
-                    <blockquote class="blockquote">
-                        <p class="mb-0">Uspace has a very effective and efficient booking system</p>
-                        <footer class="blockquote-footer">Rihana<cite title="Source Title"></cite></footer>
-                    </blockquote>
-                </div>
+            <div class="col-2 text-center">
+                <img class="img-fluid rounded-circle" src="images/testimonials/rihana.jpg" alt="client image" height="1S0px">
+            </div>
+            <div class="col-4">
+                <blockquote class="blockquote">
+                    <p class="mb-0">Uspace has a very effective and efficient booking system</p>
+                    <footer class="blockquote-footer">Rihana<cite title="Source Title"></cite></footer>
+                </blockquote>
+            </div>
         </div>
 
     </div>
@@ -262,7 +318,7 @@
 <footer>
     <div class="bg-light">
         <div class="container">
-            <p><br /></p>
+            <p><br /><br /><br /></p>
             <div class="row">
 
                 <!------Contact Us------>
@@ -299,6 +355,7 @@
             <div class="text-center">
                 <p class="text-sm"><br /><br /><small>&copy; UseSpace 2018. All rights reserved.</small><br /></p>
             </div>
+            <br />
         </div>
     </div>
 </footer>
