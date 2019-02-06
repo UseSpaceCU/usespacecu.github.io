@@ -18,17 +18,6 @@
 
 
 <body>
-
-    <!----------------------Scripts---------------------->
-
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
     <!-------------------Navbar----------------->
     <nav class="navbar navbar-light bg-light navbar-expand-sm  sticky-top">
         <div class="container">
@@ -47,6 +36,18 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html">
                             <b>Home</b><span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <b>Events</b>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="eventsDropdown">
+                            <a class="dropdown-item" href="events/edustart2018.html">EduStart Summit 2018</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Movie Night</a>
+
+                        </div>
                     </li>
                     <!--
                     <li class="nav-item">
@@ -94,17 +95,17 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p><br /><strong>
-                            We're already processing your booking and will contact you soon.<br />
-                            Leave the stress to us.<br /><br /></strong>
-                        If not, book with us today!<br />
+                    <p class=""><br />
+                        We're already processing your booking and will contact you soon.<br />
+                        Leave the rest to us.<br />
+
                     </p>
+                    <p><strong>If not, book with us today!</strong></p>
                 </div>
                 <div class="modal-footer">
                     <a href="https://goo.gl/forms/24GdvOzbv3IsKvXE2" target="_blank">
                         <button class="btn btn-outline-info btn-sm" type="button">Book Now</button>
                     </a>
-
                     <!--<button type="button" class="btn btn-info" href="https://goo.gl/forms/24GdvOzbv3IsKvXE2">Book Now</button> -->
                     <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
                 </div>
@@ -310,6 +311,28 @@
         </div>
 
     </div>
+
+    <!----------------------Scripts---------------------->
+
+    <script src="js/holder.min.js"></script>
+    <script src="js/jquery-slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(".hoverli").hover(
+                function() {
+                    $('ul.file_menu').stop(true, true).slideDown('medium');
+                },
+                function() {
+                    $('ul.file_menu').stop(true, true).slideUp('medidum');
+                }
+            );
+        });
+
+    </script>
+
 </body>
 
 
