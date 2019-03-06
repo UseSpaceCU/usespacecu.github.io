@@ -20,7 +20,7 @@
 <body>
     <!-------------------Navbar----------------->
     <nav class="navbar navbar-light bg-light navbar-expand-sm  sticky-top">
-        
+        <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="images/usespace-logo.png" class="img-fluid">
             </a>
@@ -52,12 +52,6 @@
                     </li>                    
                     -->
                     <li class="nav-item">
-                        <a class="nav-link" href="https://goo.gl/forms/FHpcNPW3nGaMrXU83">
-                            <b>Edustart 2.0 Accommodation</b>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
                         <a class="nav-link" href="https://usespacecu.wordpress.com" target="_blank">
                             <b>Our Blog</b>
                         </a>
@@ -75,7 +69,7 @@
                         </a>
                     </li>
                 </ul>
-
+            </div>
         </div>
     </nav>
 
@@ -157,55 +151,43 @@
         <br /><br />
     </div>
 
-
     <div class="bg-light" id="for rent">
-        <hr /><br /><br /><br />
-        <div class="container">
+        <div class="container text-center">
+<br /><br /><br />
             <div class="row" id="multipurpose hall">
-                <div class="col-2"></div>
-                <div class="col-4">
-                    <img class="img-fluid rounded" src="images/home/multipurpose-hall.jpg">
+                <div class="col-md-6">
+                    <img style="height: 300px; width: 400px;" class="rounded" src="images/home/multipurpose-hall.jpg">
                 </div>
-                <div class=""></div>
-                <div class="col-6"><br />
+                <div class="col-md-6"><br />
                     <h2><br /><strong>Multipurpose Halls</strong></h2>
                     <p><br />For your conferences, meet ups, events and celebrations...<br />We pride ourselves with a portfolio of locations that can fit any crowd <br />from a few hundred to a couple thousand.</p>
                 </div>
             </div>
-        </div>
 
-        <br /><br /><br />
-        <!--
-        <hr /><br />
--->
+            <br /><br /><br />
 
 
-        <div class="container">
-            <div class="row text-right" id="office spaces">
-                <div class="col-6"><br />
+            <div class="row" id="office spaces">
+                <div class="col-md-6 order-last">
+                    <img style="height: 300px; width: 400px;" class="img-fluid rounded" src="images/home/office-space.jpg">
+                </div>
+                <div class="col-md-6 order-first"><br />
                     <h2><br /><strong>Office Spaces</strong></h2>
                     <p><br />We have office spaces able to host teams of different sizes.<br />
                         Use us today to increase your team's productivity <br />with spacious and affordable work spaces!</p>
                 </div>
-                <div class="col-4">
-                    <img class="img-fluid rounded" src="images/home/office-space.jpg">
-                </div>
-                <div class="col-2"></div>
             </div>
-        </div>
 
 
-        <!--
+            <!--
         <hr /><br />
 -->
-        <br /><br /><br />
-        <div class="container">
+            <br /><br /><br />
             <div class="row" id="conference rooms">
-                <div class="col-2"></div>
-                <div class="col-4">
-                    <img class="img-fluid rounded" src="images/home/conference-room.jpg">
+                <div class="col-md-6">
+                    <img style="height: 300px; width: 400px;" class="img-fluid rounded" src="images/home/conference-room.jpg">
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                     <br />
                     <h2><br /><strong>Conference Rooms</strong></h2>
                     <p><br />Great companies and brands were all built on a series of great decisions.<br />Allow us to fix a venue for your management meetings and corporate gatherings...</p>
@@ -215,9 +197,8 @@
 
         <br /><br /><br />
         <hr />
+
     </div>
-
-
     <!--
         <hr /><br />
 
@@ -281,11 +262,11 @@
         <h3 class="text-center"><strong>What Clients Are Saying</strong></h3>
         <br /><br />
         <div class="row">
-            <div class="col-1"></div>
-            <div class="col-2 text-center">
+
+            <div class="col-md-3 text-center">
                 <img class="img-fluid rounded-circle" src="images/testimonials/ben.jpg" alt="client image">
             </div>
-            <div class="col-3">
+            <div class="col-md-3">
                 <blockquote class="blockquote">
                     <p class="mb-0"><small><br />Their workspaces was conducive and helped me focus on more important things for my starup</small></p>
                     <footer class="blockquote-footer">Ben<cite title="Source Title"> </cite></footer>
@@ -294,16 +275,15 @@
 
             <br />
 
-            <div class="col-2 text-center">
+            <div class="col-md-3 text-center">
                 <img class="img-fluid rounded-circle" src="images/testimonials/madam-t2.jpg" alt="client image">
             </div>
-            <div class="col-3">
+            <div class="col-md-3">
                 <blockquote class="blockquote">
                     <p class="mb-0"><small><br />The UseSpace service was fast and reliable and enabled me to secure a location for my book launch event.</small></p>
                     <footer class="blockquote-footer">Madam T<cite title="Source Title"></cite></footer>
                 </blockquote>
             </div>
-            <div class="col-1"></div>
         </div>
 
     </div>
@@ -342,7 +322,7 @@
             <div class="row">
 
                 <!------Contact Us------>
-                <div class="col-3">
+                <div class="col-md-3">
                     <h6><strong>Contact Us</strong>
                         <hr />
                     </h6>
@@ -350,18 +330,17 @@
                 </div>
 
                 <!------Find Us------>
-                <div class="col-3">
+                <div class="col-md-3">
                     <h6><strong>Find Us</strong>
                         <hr />
                     </h6>
                     <p><small>Center for Entrepreneurial Development<br />Covenant University, Ota<br />Ogun<br />Nigeria<br>
                             <a href="https://goo.gl/maps/W1YpqnTRMGp">Check us on Google Maps</a></small></p>
                 </div>
-
-                <div class="col-3"></div>
+                <div class="col-md-3"></div>
 
                 <!------Social Media----->
-                <div class="col-3">
+                <div class="col-md-3">
                     <h6><strong>Social Media</strong>
                         <hr />
                     </h6>
